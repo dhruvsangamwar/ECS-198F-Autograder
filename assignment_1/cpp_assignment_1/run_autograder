@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
 
 # Find the files to tested ( searches within folders )
-exampleFile=$(find / -xdev -name example3.cpp)
-# exampleHeader=$(find / -xdev -name isValidBracelet.h)
+exampleHeader=$(find / -xdev -name isValidBracelet.cpp)
 
 # Copies the files into the Autograder's CWD 
-cp $exampleFile /autograder/source/example3.cpp
-# cp $exampleHeader /autograder/source/example3.h
+cp $exampleHeader /autograder/source/isValidBracelet.cpp
 
 cd /autograder/source
 

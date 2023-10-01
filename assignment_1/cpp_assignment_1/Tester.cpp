@@ -1,34 +1,31 @@
-/*
-    Name: Josh Norman 
-    Date: Dec 30, 2020
-
-    Course: TA Training 
-
-    Objective: This is a primitive example of Class Unit Testing with 
-    Gradescope. This is a simple class based program that will allow 
-    for unit testing. This file will respresent the Autograders Driver 
-    file. This file should be within the zip file and is used by run_test.py
-
-*/
-
 #include <iostream>
-#include "example3.h"
+#include "isValidBracelet.cpp"
+#include <string>
 
 using namespace std; 
 
 int main( int argc, char *argv[]){
     
     if( atoi( argv[1]) == 0){
-        example3 test;
-        cout<<test.welcomeString()<<endl;
+        std::vector<string> arr = {"red_left", "blue_left", "blue_right", "red_right"};
+        cout << isValidBracelet(arr) << endl;
     }
     else if( atoi( argv[1]) == 1){
-        example3 test2("Josh");
-        cout<<test2.welcomeString()<<endl; 
+        std::vector<string> arr = {"red_left", "blue_right"};
+        cout << isValidBracelet(arr) << endl;
+
     }
-     else if( atoi( argv[1]) == 2){
-        example3 test3("Dr. Plaue");
-        cout<<test3.welcomeString()<<endl; 
+    else if( atoi( argv[1]) == 2){
+        std::vector<string> arr = {"red_left", "red_right", "blue_left", "blue_right"};
+        cout << isValidBracelet(arr) << endl;
+    }  
+    else if( atoi( argv[1]) == 3){
+        std::vector<string> arr = {};
+        cout << isValidBracelet(arr) << endl;
+    }  
+    else if( atoi( argv[1]) == 4){
+        std::vector<string> arr = {"red_left", "blue_left", "yellow_left", "yellow_right", "blue_right", "red_right"};
+        cout << isValidBracelet(arr) << endl;
     }  
 
     return 0; 

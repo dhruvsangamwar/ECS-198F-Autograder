@@ -2,7 +2,7 @@
 
 # Set up autograder files
 
-cp /autograder/submission/removeDuplicates.py /autograder/source/removeDuplicates.py
+cp /autograder/submission/isValidBracelet.py /autograder/source/isValidBracelet.py
 
 cd /autograder/source
 
