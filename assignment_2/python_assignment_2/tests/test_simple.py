@@ -2,8 +2,10 @@ import unittest
 import time
 import collections
 from gradescope_utils.autograder_utils.decorators import weight, number, visibility
-from assignment2 import findCycle
 from linkedList import LinkedList
+
+from assignment2 import detectCycle
+from assignment2 import find_next_recommendation
 
 runTime = 0.0
 
@@ -11,39 +13,167 @@ class TestDiff(unittest.TestCase):
     global runTime
     start_time = time.time()
 
-    @weight(20)
+    @weight(10)
     def test_1(self):
-        """Test Case 1"""
-        arr1 = ["red_left", "blue_left", "blue_right", "red_right"]
-        val = findCycle(arr1)
+        """detectCycle - Test Case 1"""
+        my_linked_list = LinkedList()
+        my_linked_list.append(1)
+        my_linked_list.append(2)
+        my_linked_list.append(3)
+        my_linked_list.append(4)
+        my_linked_list.append(5)
+        my_linked_list.create_cycle(2)
+
+        val = detectCycle(my_linked_list)
         self.assertEqual(val, 'True')
 
-    @weight(20)
+    @weight(10)
     def test_2(self):
-        """Test Case 2"""
-        arr2 = ["red_left", "blue_right"]
-        val = isValidBracelet(arr2)
+        """detectCycle - Test Case 2"""
+        my_linked_list = LinkedList()
+        my_linked_list.append('a')
+        my_linked_list.append('b')
+        my_linked_list.append('c')
+        my_linked_list.append('d')
+        my_linked_list.append('e')
+        my_linked_list.create_cycle('b')
+        
+        val = detectCycle(my_linked_list)
+        self.assertEqual(val, 'True')
+
+    @weight(10)
+    def test_3(self):
+        """detectCycle - Test Case 3"""
+        my_linked_list = LinkedList()
+        my_linked_list.append('a')
+        my_linked_list.append('a')
+        my_linked_list.append('a')
+        my_linked_list.append('a')
+        my_linked_list.append('a')
+        my_linked_list.create_cycle('a')
+        
+        val = detectCycle(my_linked_list)
+        self.assertEqual(val, 'True')
+
+    @weight(10)
+    def test_4(self):
+        """detectCycle - Test Case 4"""
+        my_linked_list = LinkedList()
+        my_linked_list.append(1)
+        my_linked_list.append(2)
+        my_linked_list.append(3)
+        my_linked_list.append(4)
+        my_linked_list.append(5)
+        
+        val = detectCycle(my_linked_list)
+        self.assertEqual(val, 'False')
+    
+    @weight(10)
+    def test_5(self):
+        """detectCycle - Test Case 5"""
+        my_linked_list = LinkedList()
+        
+        val = detectCycle(my_linked_list)
         self.assertEqual(val, 'False')
 
-    @weight(20)
-    def test_3(self):
-        """Test Case 3"""
-        arr3 = ["red_left", "red_right", "blue_left", "blue_right"]
-        val = isValidBracelet(arr3)
+    @weight(10)
+    def test_6(self):
+        """find_next_recommendation - Test Case 1"""
+
+        graph_test1 = {
+            'You': {'Friend1': 2, 'Friend2': 3, 'Friend3': 4},
+            'Friend1': {'You': 2, 'Friend4': 1},
+            'Friend2': {'You': 3, 'Friend5': 2},
+            'Friend3': {'You': 4},
+            'Friend4': {'Friend1': 1},
+            'Friend5': {'Friend2': 2}
+        }
+
+        current_friends_test1 = {'Friend1', 'Friend2'}
+
+        val = find_next_recommendation(graph_test1, current_friends_test1)
         self.assertEqual(val, 'True')
 
-    @weight(20)
-    def test_4(self):
-        """Test Case 4"""
-        arr4 = []
-        val = isValidBracelet(arr4)
+    @weight(10)
+    def test_7(self):
+        """find_next_recommendation - Test Case 2"""
+
+        graph_test2 = {
+            'You': {'Friend1': 2.5, 'Friend2': 3, 'Friend3': 4.2, 'Friend4': 1.8},
+            'Friend1': {'You': 2.5, 'Friend5': 3.1},
+            'Friend2': {'You': 3, 'Friend5': 2.8},
+            'Friend3': {'You': 4.2, 'Friend6': 2.3},
+            'Friend4': {'You': 1.8},
+            'Friend5': {'Friend1': 3.1, 'Friend2': 2.8},
+            'Friend6': {'Friend3': 2.3}
+        }
+
+        current_friends_test2 = {'Friend1', 'Friend2', 'Friend3'}
+
+
+        val = find_next_recommendation(graph_test2, current_friends_test2)
         self.assertEqual(val, 'True')
-    
-    @weight(20)
-    def test_5(self):
-        """Test Case 5"""
-        arr5 = ["red_left", "blue_left", "yellow_left", "yellow_right", "blue_right", "red_right"]
-        val = isValidBracelet(arr5)
+
+
+    @weight(10)
+    def test_8(self):
+        """find_next_recommendation - Test Case 3"""
+
+        graph_test3 = {
+            'You': {},
+            'Friend1': {},
+            'Friend2': {},
+            'Friend3': {},
+            'Friend4': {},
+            'Friend5': {}
+        }
+
+        current_friends_test3 = set()
+
+
+        val = find_next_recommendation(graph_test3, current_friends_test3)
+        self.assertEqual(val, 'None')
+
+    @weight(10)
+    def test_9(self):
+        """find_next_recommendation - Test Case 4"""
+
+        graph_test4 = {
+            'You': {'Friend1': 2.5},
+            'Friend1': {'You': 2.5},
+            'Friend2': {},
+            'Friend3': {},
+            'Friend4': {},
+            'Friend5': {}
+        }
+
+        current_friends_test4 = {'Friend1'}
+
+
+
+        val = find_next_recommendation(graph_test4, current_friends_test4)
+        self.assertEqual(val, 'True')
+
+    @weight(10)
+    def test_10(self):
+        """find_next_recommendation - Test Case 5"""
+
+        graph_test5 = {
+            'You': {'Friend1': 3, 'Friend2': 3, 'Friend3': 3, 'Friend4': 3},
+            'Friend1': {'You': 3, 'Friend5': 3},
+            'Friend2': {'You': 3, 'Friend6': 3},
+            'Friend3': {'You': 3, 'Friend7': 3},
+            'Friend4': {'You': 3, 'Friend8': 3},
+            'Friend5': {'Friend1': 3},
+            'Friend6': {'Friend2': 3},
+            'Friend7': {'Friend3': 3},
+            'Friend8': {'Friend4': 3}
+        }
+
+        current_friends_test5 = {'Friend1', 'Friend2', 'Friend3', 'Friend4'}
+
+
+        val = find_next_recommendation(graph_test5, current_friends_test5)
         self.assertEqual(val, 'True')
 
     runTime = time.time() - start_time

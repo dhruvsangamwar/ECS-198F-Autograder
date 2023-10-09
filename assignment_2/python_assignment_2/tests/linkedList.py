@@ -1,140 +1,48 @@
-# Create a Node class to create a node
 class Node:
-	def __init__(self, data):
-		self.data = data
-		self.next = None
+    def __init__(self, data):
+        self.data = data
+        self.next = None
 
-# Create a LinkedList class
 class LinkedList:
-	def __init__(self):
-		self.head = None
+    def __init__(self):
+        self.head = None
 
-	# Method to add a node at begin of LL
-	def insertAtBegin(self, data):
-		new_node = Node(data)
-		if self.head is None:
-			self.head = new_node
-			return
-		else:
-			new_node.next = self.head
-			self.head = new_node
+    def append(self, data):
+        new_node = Node(data)
+        if not self.head:
+            self.head = new_node
+        else:
+            current = self.head
+            while current.next:
+                current = current.next
+            current.next = new_node
 
-	# Method to add a node at any index
-	# Indexing starts from 0.
-	def insertAtIndex(self, data, index):
-		new_node = Node(data)
-		current_node = self.head
-		position = 0
-		if position == index:
-			self.insertAtBegin(data)
-		else:
-			while(current_node != None and position+1 != index):
-				position = position+1
-				current_node = current_node.next
+    def create_cycle(self, position):
+        # Create a cycle by linking the last node to a node at the specified position
+        if position < 0:
+            return  # Invalid position
+        current = self.head
+        tail = None
+        index = 0
+        while current:
+            if index == position:
+                tail = current
+            if not current.next:
+                current.next = tail  # Create the cycle here
+                return
+            current = current.next
+            index += 1
 
-			if current_node != None:
-				new_node.next = current_node.next
-				current_node.next = new_node
-			else:
-				print("Index not present")
+def has_cycle(linked_list):
+    # Floyd's Cycle Detection Algorithm
+    slow = linked_list.head
+    fast = linked_list.head
 
-	# Method to add a node at the end of LL
+    while fast is not None and fast.next is not None:
+        slow = slow.next
+        fast = fast.next.next
 
-	def insertAtEnd(self, data):
-		new_node = Node(data)
-		if self.head is None:
-			self.head = new_node
-			return
+        if slow == fast:
+            return True  # Cycle detected
 
-		current_node = self.head
-		while(current_node.next):
-			current_node = current_node.next
-
-		current_node.next = new_node
-
-	# Update node of a linked list
-		# at given position
-	def updateNode(self, val, index):
-		current_node = self.head
-		position = 0
-		if position == index:
-			current_node.data = val
-		else:
-			while(current_node != None and position != index):
-				position = position+1
-				current_node = current_node.next
-
-			if current_node != None:
-				current_node.data = val
-			else:
-				print("Index not present")
-
-	# Method to remove first node of linked list
-
-	def remove_first_node(self):
-		if(self.head == None):
-			return
-
-		self.head = self.head.next
-
-	# Method to remove last node of linked list
-	def remove_last_node(self):
-
-		if self.head is None:
-			return
-
-		current_node = self.head
-		while(current_node.next.next):
-			current_node = current_node.next
-
-		current_node.next = None
-
-	# Method to remove at given index
-	def remove_at_index(self, index):
-		if self.head == None:
-			return
-
-		current_node = self.head
-		position = 0
-		if position == index:
-			self.remove_first_node()
-		else:
-			while(current_node != None and position+1 != index):
-				position = position+1
-				current_node = current_node.next
-
-			if current_node != None:
-				current_node.next = current_node.next.next
-			else:
-				print("Index not present")
-
-	# Method to remove a node from linked list
-	def remove_node(self, data):
-		current_node = self.head
-
-		while(current_node != None and current_node.next.data != data):
-			current_node = current_node.next
-
-		if current_node == None:
-			return
-		else:
-			current_node.next = current_node.next.next
-
-	# Print the size of linked list
-	def sizeOfLL(self):
-		size = 0
-		if(self.head):
-			current_node = self.head
-			while(current_node):
-				size = size+1
-				current_node = current_node.next
-			return size
-		else:
-			return 0
-
-	# print method for the linked list
-	def printLL(self):
-		current_node = self.head
-		while(current_node):
-			print(current_node.data)
-			current_node = current_node.next
+    return False
