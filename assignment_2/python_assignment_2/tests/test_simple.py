@@ -92,7 +92,7 @@ class TestDiff(unittest.TestCase):
         current_friends_test1 = {'Friend1', 'Friend2'}
 
         val = find_next_recommendation(graph_test1, current_friends_test1)
-        self.assertEqual(val, 'True')
+        self.assertEqual(val, 'Next recommended friend: Friend4')
 
     @weight(10)
     def test_7(self):
@@ -112,7 +112,7 @@ class TestDiff(unittest.TestCase):
 
 
         val = find_next_recommendation(graph_test2, current_friends_test2)
-        self.assertEqual(val, 'True')
+        self.assertEqual(val, 'Next recommended friend: Friend4')
 
 
     @weight(10)
@@ -132,7 +132,7 @@ class TestDiff(unittest.TestCase):
 
 
         val = find_next_recommendation(graph_test3, current_friends_test3)
-        self.assertEqual(val, 'None')
+        self.assertEqual(val, 'Next recommended friend: None')
 
     @weight(10)
     def test_9(self):
@@ -152,7 +152,7 @@ class TestDiff(unittest.TestCase):
 
 
         val = find_next_recommendation(graph_test4, current_friends_test4)
-        self.assertEqual(val, 'True')
+        self.assertEqual(val, 'Next recommended friend: None')
 
     @weight(10)
     def test_10(self):
@@ -174,6 +174,6 @@ class TestDiff(unittest.TestCase):
 
 
         val = find_next_recommendation(graph_test5, current_friends_test5)
-        self.assertEqual(val, 'True')
+        self.assertIn(val, ['Next recommended friend: Friend5', 'Next recommended friend: Friend6', 'Next recommended friend: Friend7', 'Next recommended friend: Friend8'])
 
     runTime = time.time() - start_time
