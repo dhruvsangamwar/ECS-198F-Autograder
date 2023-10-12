@@ -31,12 +31,12 @@ class TestDiff(unittest.TestCase):
     def test_2(self):
         """detectCycle - Test Case 2"""
         my_linked_list = LinkedList()
-        my_linked_list.append('a')
-        my_linked_list.append('b')
-        my_linked_list.append('c')
-        my_linked_list.append('d')
-        my_linked_list.append('e')
-        my_linked_list.create_cycle('b')
+        my_linked_list.append(1) # originally 'a'
+        my_linked_list.append(2) # originally 'b'
+        my_linked_list.append(3) # originally 'c'
+        my_linked_list.append(4) # originally 'd'
+        my_linked_list.append(5) # originally 'e'
+        my_linked_list.create_cycle(3) # originally 'b'
         
         val = detectCycle(my_linked_list)
         self.assertEqual(val, 'True')
@@ -45,12 +45,12 @@ class TestDiff(unittest.TestCase):
     def test_3(self):
         """detectCycle - Test Case 3"""
         my_linked_list = LinkedList()
-        my_linked_list.append('a')
-        my_linked_list.append('a')
-        my_linked_list.append('a')
-        my_linked_list.append('a')
-        my_linked_list.append('a')
-        my_linked_list.create_cycle('a')
+        my_linked_list.append(1) # originally 'a'
+        my_linked_list.append(1) # originally 'a'
+        my_linked_list.append(1) # originally 'a'
+        my_linked_list.append(1) # originally 'a'
+        my_linked_list.append(1) # originally 'a'
+        my_linked_list.create_cycle(1) # originally 'a'
         
         val = detectCycle(my_linked_list)
         self.assertEqual(val, 'True')
