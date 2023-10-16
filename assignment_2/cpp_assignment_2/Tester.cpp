@@ -5,7 +5,6 @@
 #include <limits>
 
 #include "assignment2.cpp"
-#include "linkedList.h"
 
 using namespace std; 
 
@@ -19,38 +18,38 @@ int main( int argc, char *argv[]){
         CycleList.append(3);
         CycleList.append(4);
         CycleList.append(5);
-        CycleList.createCycle(2)
+        CycleList.createCycle(2);
         cout << detectCycle(CycleList) << endl;
     }
     else if( atoi( argv[1]) == 1){
         LinkedList CycleList;
-        CycleList.append("a");
-        CycleList.append("b");
-        CycleList.append("c");
-        CycleList.append("d");
-        CycleList.append("e");
-        CycleList.createCycle("b")
+        CycleList.append(1);
+        CycleList.append(2);
+        CycleList.append(3);
+        CycleList.append(4);
+        CycleList.append(5);
+        CycleList.createCycle(3);
 
         cout << detectCycle(CycleList) << endl;
     }
     else if( atoi( argv[1]) == 2){
         LinkedList CycleList;
-        CycleList.append("a");
-        CycleList.append("a");
-        CycleList.append("a");
-        CycleList.append("a");
-        CycleList.append("a");
-        CycleList.createCycle("a")
+        CycleList.append(1);
+        CycleList.append(1);
+        CycleList.append(1);
+        CycleList.append(1);
+        CycleList.append(1);
+        CycleList.createCycle(1);
 
         cout << detectCycle(CycleList) << endl;
     }  
     else if( atoi( argv[1]) == 3){
         LinkedList noCycleList;
-        noCycleList.append("a");
-        noCycleList.append("b");
-        noCycleList.append("c");
-        noCycleList.append("d");
-        noCycleList.append("e");
+        noCycleList.append(1);
+        noCycleList.append(2);
+        noCycleList.append(3);
+        noCycleList.append(4);
+        noCycleList.append(5);
 
         cout << detectCycle(noCycleList) << endl;
     }  
@@ -63,7 +62,7 @@ int main( int argc, char *argv[]){
     // Test cases for the graph problem  
     else if( atoi( argv[1]) == 5){
         // case 1: ints only
-        std::unordered_map<std::string, std::unordered_map<std::string, int>> graph_test1 = {
+        std::unordered_map<std::string, std::unordered_map <std::string, int> > graph_test1 = {
             {"You", {{"Friend1", 2}, {"Friend2", 3}, {"Friend3", 4}}},
             {"Friend1", {{"You", 2}, {"Friend4", 1}}},
             {"Friend2", {{"You", 3}, {"Friend5", 2}}},
@@ -78,7 +77,7 @@ int main( int argc, char *argv[]){
     }
     else if( atoi( argv[1]) == 6){
         // case 2 ints and floats
-        std::unordered_map<std::string, std::unordered_map<std::string, double>> graph_test2 = {
+        std::unordered_map<std::string, std::unordered_map <std::string, double> > graph_test2 = {
             {"You", {{"Friend1", 2.5}, {"Friend2", 3.0}, {"Friend3", 4.2}, {"Friend4", 1.8}}},
             {"Friend1", {{"You", 2.5}, {"Friend5", 3.1}}},
             {"Friend2", {{"You", 3.0}, {"Friend5", 2.8}}},
@@ -95,7 +94,7 @@ int main( int argc, char *argv[]){
     }
     else if( atoi( argv[1]) == 7){
         // case 3
-        std::unordered_map<std::string, std::unordered_map<std::string, double>> graph_test3 = {
+        std::unordered_map<std::string, std::unordered_map <std::string, double> > graph_test3 = {
             {"You", {}},
             {"Friend1", {}},
             {"Friend2", {}},
@@ -111,7 +110,7 @@ int main( int argc, char *argv[]){
     }  
     else if( atoi( argv[1]) == 8){
         // case 4
-        std::unordered_map<std::string, std::unordered_map<std::string, double>> graph_test4 = {
+        std::unordered_map<std::string, std::unordered_map <std::string, double> > graph_test4 = {
             {"You", {{"Friend1", 2.5}}},
             {"Friend1", {{"You", 2.5}}},
             {"Friend2", {}},
@@ -126,7 +125,7 @@ int main( int argc, char *argv[]){
     }  
     else if( atoi( argv[1]) == 9){
         
-        std::unordered_map<std::string, std::unordered_map<std::string, double>> graph_test5 = {
+        std::unordered_map<std::string, std::unordered_map <std::string, double> > graph_test5 = {
             {"You", {{"Friend1", 3}, {"Friend2", 3}, {"Friend3", 3}, {"Friend4", 3}}},
             {"Friend1", {{"You", 3}, {"Friend5", 3}}},
             {"Friend2", {{"You", 3}, {"Friend6", 3}}},
