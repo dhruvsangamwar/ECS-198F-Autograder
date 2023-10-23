@@ -18,44 +18,46 @@ int main( int argc, char *argv[]){
         graph.push_back(std::vector<std::string>{"a"});
 		graph.push_back(std::vector<std::string>{"a"});
 
-        cout << runErrands(graph) << endl;
+        cout << runErrands(graph) << endl; // 4
     }
     else if( atoi( argv[1]) == 1){
         std::vector<std::vector<std::string>> graph;
         graph.push_back(std::vector<std::string>{"b"});
         graph.push_back(std::vector<std::string>{"a", "c"});
         graph.push_back(std::vector<std::string>{"b"});
-        graph.push_back(std::vector<std::string>{"d"});
+        graph.push_back(std::vector<std::string>{"a"});
 
-        cout << runErrands(graph) << endl;
+        cout << runErrands(graph) << endl; // 3
     }
     else if( atoi( argv[1]) == 2){
         std::vector<std::vector<std::string>> graph;
         graph.push_back(std::vector<std::string>{"b", "c"});
         graph.push_back(std::vector<std::string>{"a"});
         graph.push_back(std::vector<std::string>{"a"});
-        graph.push_back(std::vector<std::string>{"d"});
-
-        cout << runErrands(graph) << endl;
+        graph.push_back(std::vector<std::string>{"c"});
+        graph.push_back(std::vector<std::string>{"b"});
+        cout << runErrands(graph) << endl; // 3
 
     }  
     else if( atoi( argv[1]) == 3){
         std::vector<std::vector<std::string>> graph;
-        graph.push_back(std::vector<std::string>{"b"});
-        graph.push_back(std::vector<std::string>{"a"});
-        graph.push_back(std::vector<std::string>{"d"});
-        graph.push_back(std::vector<std::string>{"c"});
-
-        cout << runErrands(graph) << endl;
+        graph.push_back(std::vector<std::string>{"b", "c"});
+        graph.push_back(std::vector<std::string>{"a", "c"});
+        graph.push_back(std::vector<std::string>{"a", "b", "d", "e"});
+        graph.push_back(std::vector<std::string>{"c", "e"});
+        graph.push_back(std::vector<std::string>{"c", "d", "e"});
+        graph.push_back(std::vector<std::string>{"f"});
+        
+        cout << runErrands(graph) << endl; // 5
     }  
     else if( atoi( argv[1]) == 4){
         std::vector<std::vector<std::string>> graph;
-        graph.push_back(std::vector<std::string>{"b", "c"});
-        graph.push_back(std::vector<std::string>{"a", "d"});
-        graph.push_back(std::vector<std::string>{"a"});
         graph.push_back(std::vector<std::string>{"b"});
+        graph.push_back(std::vector<std::string>{"a", "d", "e"});
+        graph.push_back(std::vector<std::string>{"d"});
+        graph.push_back(std::vector<std::string>{"b", "e"});
 
-        cout << runErrands(graph) << endl;
+        cout << runErrands(graph) << endl; // 4
     } 
 
     // Test cases for the LRU problem  
@@ -83,7 +85,7 @@ int main( int argc, char *argv[]){
         clip.copy(6, 6);  // Clipboard is {1=1, 2=2, 3=3, 4=4, 5=5} // evict 5
         
         int result2e = clip.paste(5); // should be -1
-        cout << result2a << " " << result2b << " " << result2c << " " << result2d << " " << result2e << endl;
+        cout << result2a << " " << result2b << " " << result2c << " " << result2d << " " << result2e << endl; // 1 2 3 4 -1
     }
     else if( atoi( argv[1]) == 7){
         // case 3: ints only
@@ -96,7 +98,7 @@ int main( int argc, char *argv[]){
         int result3b = clip.paste(2); // Expected: -1
         int result3c = clip.paste(3); // Expected: 3
 
-        cout << result3a << " " << result3b << " " << result3c << endl;
+        cout << result3a << " " << result3b << " " << result3c << endl; // 1 -1 3
     }  
     else if( atoi( argv[1]) == 8){
         // case 4: ints only -> edge case
@@ -108,7 +110,7 @@ int main( int argc, char *argv[]){
         int result4b = clip.paste(2); // Expected: 2
         int result4c = clip.paste(1); // Expected: -1
         
-        cout << result4a << " " << result4b << " " << result4c  << endl;
+        cout << result4a << " " << result4b << " " << result4c  << endl; // 1 2 -1
 
     }  
     else if( atoi( argv[1]) == 9){
@@ -117,7 +119,7 @@ int main( int argc, char *argv[]){
         int result5a = clip.paste(1); // Expected: -1
         int result5b = clip.paste(2); // Expected: -1
 
-        cout << result5a << " " << result5b << endl;
+        cout << result5a << " " << result5b << endl; // -1 -1
     }  
 
     return 0; 
