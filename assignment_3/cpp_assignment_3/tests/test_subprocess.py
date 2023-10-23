@@ -54,7 +54,7 @@ class TestDiff(unittest.TestCase):
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
-        errorMessage = "Expected: False\nFound: "+output
+        errorMessage = "Expected: 3\nFound: "+output
         # Standard unit test case with an associated error message 
         self.assertTrue( output == "3", msg=output)
         test.terminate()
@@ -70,7 +70,7 @@ class TestDiff(unittest.TestCase):
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
-        errorMessage = "Expected: True\nFound: "+output
+        errorMessage = "Expected: 3\nFound: "+output
         # Standard unit test case with an associated error message 
         self.assertTrue( output == "3", msg=output)
         test.terminate()
@@ -85,7 +85,7 @@ class TestDiff(unittest.TestCase):
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
-        errorMessage = "Expected: True\nFound: "+output
+        errorMessage = "Expected: 5\nFound: "+output
         # Standard unit test case with an associated error message 
         self.assertTrue( output == "5", msg=output)
         test.terminate()
@@ -100,7 +100,7 @@ class TestDiff(unittest.TestCase):
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
-        errorMessage = "Expected: True\nFound: "+output
+        errorMessage = "Expected: 4\nFound: "+output
         # Standard unit test case with an associated error message 
         self.assertTrue( output == "4", msg=output)
         test.terminate()
