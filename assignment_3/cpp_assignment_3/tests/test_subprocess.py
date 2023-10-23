@@ -38,9 +38,9 @@ class TestDiff(unittest.TestCase):
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
-        errorMessage = "Expected: True\nFound: "+output
+        errorMessage = "Expected: 4\nFound: "+output
         # Standard unit test case with an associated error message 
-        self.assertTrue( output == "True", msg=output)
+        self.assertTrue( output == "4", msg=output)
         test.terminate()
     
     # Associated point value within GradeScope
@@ -56,7 +56,7 @@ class TestDiff(unittest.TestCase):
 
         errorMessage = "Expected: False\nFound: "+output
         # Standard unit test case with an associated error message 
-        self.assertTrue( output == "True", msg=output)
+        self.assertTrue( output == "3", msg=output)
         test.terminate()
 
     # Associated point value within GradeScope
@@ -72,7 +72,7 @@ class TestDiff(unittest.TestCase):
 
         errorMessage = "Expected: True\nFound: "+output
         # Standard unit test case with an associated error message 
-        self.assertTrue( output == "True", msg=output)
+        self.assertTrue( output == "3", msg=output)
         test.terminate()
     
     @weight(10)
@@ -87,7 +87,7 @@ class TestDiff(unittest.TestCase):
 
         errorMessage = "Expected: True\nFound: "+output
         # Standard unit test case with an associated error message 
-        self.assertTrue( output == "False", msg=output)
+        self.assertTrue( output == "5", msg=output)
         test.terminate()
     
     @weight(10)
@@ -102,7 +102,7 @@ class TestDiff(unittest.TestCase):
 
         errorMessage = "Expected: True\nFound: "+output
         # Standard unit test case with an associated error message 
-        self.assertTrue( output == "False", msg=output)
+        self.assertTrue( output == "4", msg=output)
         test.terminate()
     
     @weight(10)
@@ -115,9 +115,9 @@ class TestDiff(unittest.TestCase):
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
-        errorMessage = "Expected: True\nFound: "+output
+        errorMessage = "Expected: 1\nFound: "+output
         # Standard unit test case with an associated error message 
-        self.assertIn(output, ["Next recommended friend: Friend4"])
+        self.assertTrue( output == "1", msg=output)
         test.terminate()
 
     @weight(10)
@@ -130,9 +130,9 @@ class TestDiff(unittest.TestCase):
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
-        errorMessage = "Expected: True\nFound: "+output
+        errorMessage = "Expected: 1 2 3 4 -1\nFound: "+output
         # Standard unit test case with an associated error message 
-        self.assertIn(output, ["Next recommended friend: Friend4"])
+        self.assertTrue( output == "1 2 3 4 -1", msg=output)
         test.terminate()
 
     @weight(10)
@@ -145,9 +145,9 @@ class TestDiff(unittest.TestCase):
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
-        errorMessage = "Expected: True\nFound: "+output
+        errorMessage = "Expected: 1 -1 3\nFound: "+output
         # Standard unit test case with an associated error message 
-        self.assertIn(output, ["Next recommended friend: None"])
+        self.assertTrue( output == "1 -1 3", msg=output)
         test.terminate()
 
     @weight(10)
@@ -160,9 +160,9 @@ class TestDiff(unittest.TestCase):
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
-        errorMessage = "Expected: True\nFound: "+output
+        errorMessage = "Expected: 1 2 -1\nFound: "+output
         # Standard unit test case with an associated error message 
-        self.assertIn(output, ["Next recommended friend: None"])
+        self.assertTrue( output == "1 2 -1", msg=output)
         test.terminate()
 
     @weight(10)
@@ -175,9 +175,9 @@ class TestDiff(unittest.TestCase):
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
-        errorMessage = "Expected: True\nFound: "+output
+        errorMessage = "Expected: -1 -1\nFound: "+output
         # Standard unit test case with an associated error message 
-        self.assertIn(output, ["Next recommended friend: Friend5", "Next recommended friend: Friend6", "Next recommended friend: Friend7", "Next recommended friend: Friend8"])
+        self.assertTrue( output == "-1 -1", msg=output)
         test.terminate()
 
 
