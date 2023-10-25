@@ -2,7 +2,7 @@
 
 # Set up autograder files
 
-cp /autograder/submission/assignment2.py /autograder/source/assignment3.py
+cp /autograder/submission/assignment3.py /autograder/source/assignment3.py
 
 cd /autograder/source
 
