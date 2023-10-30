@@ -32,8 +32,8 @@ int main( int argc, char *argv[]){
     else if( atoi( argv[1]) == 2){
         std::vector<std::vector<std::string>> graph;
         graph.push_back(std::vector<std::string>{"b", "c"});
-        graph.push_back(std::vector<std::string>{"a"});
-        graph.push_back(std::vector<std::string>{"a"});
+        graph.push_back(std::vector<std::string>{"a", "e"});
+        graph.push_back(std::vector<std::string>{"a", "d"});
         graph.push_back(std::vector<std::string>{"c"});
         graph.push_back(std::vector<std::string>{"b"});
         cout << runErrands(graph) << endl; // 3

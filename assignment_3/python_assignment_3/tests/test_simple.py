@@ -2,7 +2,6 @@ import unittest
 import time
 import collections
 from gradescope_utils.autograder_utils.decorators import weight, number, visibility
-from linkedList import LinkedList
 
 from assignment3 import runErrands
 from assignment3 import clipboard
@@ -31,21 +30,21 @@ class TestDiff(unittest.TestCase):
     @weight(10)
     def test_3(self):
         """runErrands - Test Case 3"""
-        graph3 = [['b','c'],['a'],['a'],['c'],['b']]
+        graph3 = [['b','c'],['a', 'b'],['a', 'd'],['c'],['b']]
         val = runErrands(graph3)
-        self.assertEqual(val, 3)
+        self.assertEqual(val, 4)
 
     @weight(10)
     def test_4(self):
         """runErrands - Test Case 4"""
-        graph4 = [['b', 'c'],['a', 'c'],['a', 'b', 'd', 'e'],['c', 'e'], ['c', 'd', 'e'], ['f']]
+        graph4 = [['b', 'c'],['a', 'c'],['a', 'b', 'd', 'e'],['c', 'e'], ['c', 'd'], ['e']]
         val = runErrands(graph4)
         self.assertEqual(val, 5)
     
     @weight(10)
     def test_5(self):
         """runErrands - Test Case 5"""
-        graph5 = [['b'],['a','d', 'e'],['d'],['b', 'e']]
+        graph5 = [['b'],['a','d', 'e'],['d'],['b', 'e'],['b','d']]
         val = runErrands(graph5)
         self.assertEqual(val, 4)
 
@@ -76,7 +75,7 @@ class TestDiff(unittest.TestCase):
         
         result2e = clip.paste(5); # should be -1
 
-        self.assertTupleEquals((result2a, result2b, result2c, result2d, result2e), (1, 2, 3, 4, -1))
+        self.assertEqual((result2a, result2b, result2c, result2d, result2e), (1, 2, 3, 4, -1))
 
 
     @weight(10)
@@ -91,7 +90,7 @@ class TestDiff(unittest.TestCase):
         result3b = clip.paste(2) # // Expected: -1
         result3c = clip.paste(3) # // Expected: 3
         
-        self.assertTupleEquals((result3a, result3b, result3c), (1, -1, 3))
+        self.assertEqual((result3a, result3b, result3c), (1, -1, 3))
 
     @weight(10)
     def test_9(self):
@@ -104,7 +103,7 @@ class TestDiff(unittest.TestCase):
         result4b = clip.paste(2) # // Expected: 2
         result4c = clip.paste(1) # // Expected: -1
 
-        self.assertTupleEquals((result4a, result4b, result4c), (1, 2, -1))
+        self.assertEqual((result4a, result4b, result4c), (1, 2, -1))
 
     @weight(10)
     def test_10(self):
@@ -112,6 +111,6 @@ class TestDiff(unittest.TestCase):
         clip = clipboard(1)
         result5a = clip.paste(1); # Expected: -1
         result5b = clip.paste(2); # Expected: -1
-        self.assertTupleEquals((result5a, result5b), (-1,-1))        
+        self.assertEqual((result5a, result5b), (-1,-1))        
 
     runTime = time.time() - start_time

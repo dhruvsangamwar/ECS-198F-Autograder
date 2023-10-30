@@ -72,7 +72,7 @@ class TestDiff(unittest.TestCase):
 
         errorMessage = "Expected: 3\nFound: "+output
         # Standard unit test case with an associated error message 
-        self.assertTrue( output == "3", msg=output)
+        self.assertTrue( output == "4", msg=output)
         test.terminate()
     
     @weight(10)
