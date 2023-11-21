@@ -54,7 +54,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 1: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "1"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -71,7 +71,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 2: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "2"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -88,7 +88,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 3: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "3"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -105,7 +105,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 4: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "4"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -122,7 +122,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 5: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "5"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -139,7 +139,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 6: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "6"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -156,7 +156,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 7: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "7"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -173,7 +173,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 8: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "8"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -190,7 +190,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 9: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -207,7 +207,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 10: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "10"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -224,7 +224,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 11: Tests count_scores()11: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "11"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -241,7 +241,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 12: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "12"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -258,7 +258,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 13: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "13"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -275,7 +275,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 14: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "14"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -293,7 +293,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 15: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "15"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -310,7 +310,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 16: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "16"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -327,7 +327,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 17: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "17"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -344,7 +344,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 18: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "18"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -361,7 +361,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 19: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "19"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -378,7 +378,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 20: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "20"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -395,7 +395,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 21: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "21"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -412,7 +412,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 22: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "22"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -429,7 +429,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 23: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "23"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -446,7 +446,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 24: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "24"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -463,7 +463,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 25: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "25"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -480,7 +480,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 26: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the first Command Line Option
-        test = subprocess.Popen(["./test.out", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "26"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -501,7 +501,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 27: Tests count_scores()"""
 
        # Create a subprocess to run the students code with the Second Command Line Option
-        test = subprocess.Popen(["./test.out", "1"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "27"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -522,7 +522,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 28: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "2"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "28"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -542,7 +542,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 29: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "3"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "29"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -562,7 +562,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 30: Tests count_scores()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "4"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "30"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -582,7 +582,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 31: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "5"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "31"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -602,7 +602,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 32: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "6"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "32"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -622,7 +622,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 33: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "7"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "33"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -642,7 +642,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 34: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "8"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "34"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -662,7 +662,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 35: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "35"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -683,7 +683,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 36: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "36"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -703,7 +703,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 37: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "37"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -723,7 +723,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 38: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "38"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -743,7 +743,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 39: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "39"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -763,7 +763,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 40: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "40"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -783,7 +783,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 41: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "41"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -803,7 +803,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 42: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "42"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -823,7 +823,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 43: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "43"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -843,7 +843,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 44: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "44"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -863,7 +863,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 45: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "45"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -883,7 +883,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 46: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "46"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -903,7 +903,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 47: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "47"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -923,7 +923,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 48: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "48"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -943,7 +943,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 49: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "49"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -963,7 +963,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 50: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "50"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -983,7 +983,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 51: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "51"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -1003,7 +1003,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 52: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "52"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -1023,7 +1023,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 53: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "53"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -1043,7 +1043,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 54: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "54"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -1063,7 +1063,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 55: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "55"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -1083,7 +1083,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 56: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "56"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -1103,7 +1103,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 57: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "57"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -1123,7 +1123,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 58: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "58"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -1143,7 +1143,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 59: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "59"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -1163,7 +1163,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 60: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "60"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -1183,7 +1183,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 61: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "61"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
@@ -1200,7 +1200,7 @@ class TestDiff(unittest.TestCase):
         """Test Case 62: Tests rename_people()"""
 
         # Create a subprocess to run the students code with the Third Command Line Option
-        test = subprocess.Popen(["./test.out", "9"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        test = subprocess.Popen(["./test.out", "62"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
