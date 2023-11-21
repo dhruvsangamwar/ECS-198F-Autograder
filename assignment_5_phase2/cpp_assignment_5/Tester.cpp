@@ -166,7 +166,7 @@ int main( int argc, char *argv[]){
         cout << rename_people(2, "aaaa_aaa", "aa_aaaa") << endl;
     }
     else if( atoi( argv[1]) == 28){
-        cout << rename_people(4, 4, "aaa_bba_ccb_dcss", "bba_ccb_acc_caa") << endl;
+        cout << rename_people(4, "aaa_bba_ccb_dcss", "bba_ccb_acc_caa") << endl;
     }  
     else if( atoi( argv[1]) == 29){
         cout << rename_people(7, "a_cc_aaa_bb_bca_acb_aa", "aba_aac_hhd_bcd_aad_ooa_bab") << endl;
