@@ -30,7 +30,7 @@ class TestDiff(unittest.TestCase):
         all_heights = [95, 103.56, 97.22, 107.39, 108.22]
         k = 3
         val = predict_tree_height(target_tree_coordinates, all_trees, all_heights, k)
-        self.assertEqual(val, 299.61)
+        self.assertEqual(val, 99.87)
 
     @weight(0.1)
     def test_3(self):

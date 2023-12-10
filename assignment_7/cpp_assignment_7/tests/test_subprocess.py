@@ -55,7 +55,7 @@ class TestDiff(unittest.TestCase):
         output = test.stdout.read().strip().decode('utf-8')
         test.kill()
 
-        expected = "299.61"
+        expected = "99.87"
         message = "We expected this:\n" + expected + "\nWe got this:\n" + output
         # Standard unit test case with an associated error message 
         self.assertTrue( output == expected, msg=message)
