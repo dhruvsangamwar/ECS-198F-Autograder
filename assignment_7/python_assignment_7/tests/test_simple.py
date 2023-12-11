@@ -570,7 +570,7 @@ class TestDiff(unittest.TestCase):
 
     @weight(0.1)
     def test_73(self):
-        bracelet = "abbccj"
+        bracelet = "lmnjjk"
         k = 5
         val = rearrange_bracelet(bracelet, k)
         self.assertIn(val, ['jkmlnj', 'jnmklj', 'jknmlj', 'jklnmj', 'jmklnj', 'jlnkmj', 'jklmnj', 'jkmnlj', 'jnlmkj', 'jmlknj', 'jlkmnj', 'jlmnkj', 'jmlnkj', 'jlknmj', 'jknlmj', 'jmnklj', 'jnkmlj', 'jnmlkj', 'jmnlkj', 'jlmknj', 'jmknlj', 'jlnmkj', 'jnlkmj', 'jnklmj'])

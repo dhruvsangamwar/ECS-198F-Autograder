@@ -419,7 +419,7 @@ int main( int argc, char *argv[]){
         cout << rearrange_bracelet(bracelet, k) << endl;
     }
     else if( atoi( argv[1]) == 72){
-        std::string bracelet = "abbccj";
+        std::string bracelet = "lmnjjk";
         int k = 5;
         cout << rearrange_bracelet(bracelet, k) << endl;
     }
