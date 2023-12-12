@@ -5,7 +5,7 @@
 #include <vector>
 #include <limits>
 
-#include "homework7.cpp"
+#include "assignment7.cpp"
 
 int main( int argc, char *argv[]){
     if( atoi( argv[1]) == 0){
