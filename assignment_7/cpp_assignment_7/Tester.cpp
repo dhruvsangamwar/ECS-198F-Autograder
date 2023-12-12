@@ -6,7 +6,7 @@
 #include <limits>
 
 #include "assignment7.cpp"
-using namespace std
+using namespace std;
 
 int main( int argc, char *argv[]){
     if( atoi( argv[1]) == 0){
